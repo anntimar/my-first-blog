@@ -9,17 +9,7 @@
         
     </head>
     <body>
-        <div> class="page-header">
-            <h1><a href="/">Blog Django Girls 2</a></h1>
-        </div>
-        <div> class="post">
-            <p>publicado: 14.06.2014, 12:14</p>
-            <h2><a href="">Meu primeiro post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-             
-        <div> {% for post in posts %}
-            class="content container">
+        <div class="content container">
             <div class="row">
                 <div class="col-md-8">
                     {% for post in posts %}
@@ -29,13 +19,10 @@
                             </div>
                             <h2><a href="">{{ post.title }}</a></h2>
                             <p>{{ post.text|linebreaksbr }}</p>
-                            {% endfor %}
-        </div>
-           
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
-            <h2><a href="">Meu segundo post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </body>
 </html>
